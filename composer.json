@@ -1,5 +1,5 @@
 {
-	"name": "denisogr/yii2-cronjobs",
+	"name": "mitalcoi/yii2-cronjobs",
 	"description": "cronjobs",
 	"type": "yii2-extension",
 	"keywords": "['yii2','extension','cronjobs']",
@@ -12,7 +12,7 @@
 	],
 	"autoload": {
 		"psr-4": {
-			"denisog\\cronjobs\\": ""
+			"mitalcoi\\cronjobs\\": ""
 		}
 	}
 }
