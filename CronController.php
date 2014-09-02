@@ -5,7 +5,7 @@
  * Time: 14:51
  */
 
-namespace denisog\cronjobs;
+namespace mitalcoi\cronjobs;
 
 use Yii;
 use yii\console\Controller;
