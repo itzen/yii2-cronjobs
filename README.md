@@ -19,13 +19,13 @@ Installation
 Either run
 
 ```
-php composer.phar require --prefer-dist denisog/yii2-cronjobs "*"
+php composer.phar require --prefer-dist mitalcoi/yii2-cronjobs "*"
 ```
 
 or add
 
 ```
-"denisog/yii2-cronjobs": "*"
+"mitalcoi/yii2-cronjobs": "*"
 ```
 
 to the require section of your `composer.json` file.
@@ -38,7 +38,7 @@ Yii::setAlias('@runnerScript', dirname(dirname(dirname(__FILE__))) .'/yii');
 ```
 'controllerMap' => [
        'cron' => [
-           'class' => 'denisog\cronjobs\CronController'
+           'class' => 'mitalcoi\cronjobs\CronController'
        ],
    ],
 ```
