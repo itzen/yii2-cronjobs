@@ -9,7 +9,6 @@ But with a few changes:
 - Work eith yii2
 - Set config in params (not in phpDocs).
 
-I transfer ​​settings of crontab in local settings(params) configuration, so that the application can be run on different servers with different sets of crontab.
 
 Installation
 ------------
@@ -29,16 +28,25 @@ or add
 ```
 
 to the require section of your `composer.json` file.
-- **Step 2:** Set aliase  @runnerScript in console config. This absolutely path to runner script (I can not find another way to get runner script).
+- **Step 2:** Set aliase  @runnerScript in console config. This absolutely path to runner script
 Change path to runner script as your project. 
 ```
-Yii::setAlias('@runnerScript', dirname(dirname(dirname(__FILE__))) .'/yii');
+Yii::setAlias('@runnerScript', dirname(__DIR__) . '/yii');
 ```
 - **Step 3:** Add to console config:
 ```
 'controllerMap' => [
        'cron' => [
-           'class' => 'mitalcoi\cronjobs\CronController'
+           'class' => 'mitalcoi\cronjobs\CronController',
+           'cronJobs' =>[
+        	'test/example1' => [
+            		'cron'      => '* * * * *',            
+        	],
+		'test/example2' => [
+            		'cron'      => '10 * * * *',            
+        	],
+
+    	    ],
        ],
    ],
 ```
@@ -47,21 +55,7 @@ Yii::setAlias('@runnerScript', dirname(dirname(dirname(__FILE__))) .'/yii');
 ```sh
 * * * * * /path/to/yii/application/protected/yiic cron
 ```
-Usage
------
 
-Add in params array with cron sets:
-```
-'cronJobs' =>[
-        'test/example1' => [
-            'cron'      => '* * * * *',            
-        ],
-	'test/example2' => [
-            'cron'      => '10 * * * *',            
-        ],
-
-    ],
-```
 You can point any settings from [this](https://github.com/Yiivgeny/Yii-PHPDocCrontab/blob/master/examples/ExampleRuCommand.php).
 
 
