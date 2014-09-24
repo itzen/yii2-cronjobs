@@ -247,9 +247,7 @@ RAW;
         }
         if ($runned > 0) {
             Yii::info('Runned ' . $runned . ' task(s) at ' . date('r', $time));
-        } else {
-            Yii::info('No task on ' . date('r', $time));
-        }
+        } 
     }
 
     /**
