@@ -245,9 +245,6 @@ RAW;
                 Yii::info('Running task [' . (++$runned) . ']: ' . $task['command'] . ' ' . $task['action']);
             }
         }
-        if ($runned > 0) {
-            Yii::info('Runned ' . $runned . ' task(s) at ' . date('r', $time));
-        } 
     }
 
     /**
