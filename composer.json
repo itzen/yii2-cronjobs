@@ -1,5 +1,5 @@
 {
-    "name": "mitalcoi/yii2-cronjobs",
+    "name": "itzen/yii2-cronjobs",
     "description": "Simple and convenient installing console commands as cron jobs for Yii framework",
     "type": "yii2-extension",
     "keywords": ["yii", "cron", "crontab", "schedule"],
@@ -8,6 +8,12 @@
         {
             "name": "Sorokin Victor",
             "email": "st-agrail@yandex.ru"
+        },
+        {
+            "name": "Pawel Kania",
+            "email": "pawel.kania@itzen.pl",
+            "homepage": "http://itzen.pl/",
+            "role": "Itzen.pl founder"
         }
     ],
     "require": {
@@ -15,7 +21,7 @@
     },
     "autoload": {
         "psr-4": {
-            "mitalcoi\\cronjobs\\": ""
+            "itzen\\cronjobs\\": ""
         }
     }
 }

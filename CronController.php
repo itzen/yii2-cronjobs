@@ -5,7 +5,7 @@
  * Time: 14:51
  */
 
-namespace mitalcoi\cronjobs;
+namespace itzen\cronjobs;
 
 use Yii;
 use yii\console\Exception;
